@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <title>
             Theresa O'Hare - Resume
         </title>
@@ -8,31 +9,65 @@
     <body>
         <header>
             <div class="header-img">
-                <img src="file:///Users/theresaohare/lc101/html-me-something/web-banner.jpg" height="350" alt="Web Banner">
+                <img src="file:///Users/theresaohare/lc101/html-me-something/images/web-banner.jpg" height="350" alt="Web Banner" id="header-img">
             </div>
-            <div class="nav-bar">About | Portfolio | Contact</div>
+            <div class="nav-bar">
+                <div class = "nav-about"><a href="#about">
+                    About 
+                    </a>
+                </div>| 
+                <div class ="nav-portfolio"><a href="#portfolio">
+                    Portfolio
+                    </a>
+                </div>| 
+                <div class="nav-contact"><a href="#contact">
+                    Contact
+                    </a>
+                </div>
+            </div>
         </header>
-        <div class="about">
-            I moved to Colorado 8 years ago to enjoy all the hiking, river-floating, and craft-beer-tasting that it has to offer. When I'm not practicing computer programming, I enjoy walking through Denver, knitting, woodturning, and cooking.<br>I'm incredibly self-motivated and driven by an interest in learning as much as possible. I'm a supportive team member, and I love solving problems with others. Things I have built recently are a meme-inspired twitter bot and an animal name generator for the Dumb Friends League.
+        <main>
+        <div class="about" id="about">
+            <article>
+                <h1>About Theresa</h1>
+                <br>
+                <p>
+                I moved to Colorado 8 years ago to enjoy all the hiking, river-floating, and craft-beer-tasting that it has to offer. When I'm not practicing computer programming, I enjoy walking through Denver, knitting, woodturning, and cooking.<br><br>I'm incredibly self-motivated and driven by an interest in learning as much as possible. I'm a supportive team member, and I love solving problems with others. Things I have built recently are a meme-inspired twitter bot and an animal name generator for the Dumb Friends League.
+                </p>
+            </article>
         </div>
-        <div class="portfolio">
-            <div class="twitter-bot">
-            <img src="file:///Users/theresaohare/lc101/html-me-something/twitter-bot-img.png" alt="Twitter Bot Icon"> Check out my Twitter bot</div>
-            <div class="name-generator">
-            <img src="file:///Users/theresaohare/lc101/html-me-something/name-generator-img.jpeg" alt="Name Generator Icon">Check out my name generator</div>
-        </div>
-        <div class="contact">
-            <div class="slack">
-                <a href="https://denverdevs.org/"><img src="file:///Users/theresaohare/lc101/html-me-something/slack-icon.png">@Theresa O'Hare</a>
-            </div>
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/theresa-o-hare-013ab8171/"><img src="file:///Users/theresaohare/lc101/html-me-something/linkedin-icon.png">Linkedin</a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/theresaoh"><img src="file:///Users/theresaohare/lc101/html-me-something/github-icon.png">GitHub</a>
+        <div class="portfolio" id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="left">
+                <a href="https://twitter.com/forward_code/with_replies"><img src="images/twitter-bot-img.png" alt="Twitter Bot Icon" class="circle"></a> <br><a href="https://twitter.com/forward_code/with_replies">Check out my Twitter bot</a>
+                </div>
+            <div class="right">
+                <a href="http://smartskill.tech/siteDraft/nameGenerator1.php"><img src="images/name-generator-img.jpeg" alt="Name Generator Icon" class="circle"></a> <br><a href="http://smartskill.tech/siteDraft/nameGenerator1.php">Check out my name generator</a>
             </div>
         </div>
+        <table id="contact">
+            <tr>
+                <th></th>
+                <th colspan="2"><h1>Contact</h1></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><a href="https://denverdevs.org/"><img src="images/slack-icon.png" class="circle"></a></td>
+                <td><a href="https://www.linkedin.com/in/theresa-o-hare-013ab8171/"><img src="images/linkedin-icon.png" class="circle"></a></td>
+                <td><a href="https://github.com/theresaoh"><img src="images/github-icon.png" class="circle"></a></td>
+                <td><a href="mailto:theresa.ohare@outlook.com"><img src="images/email-icon.png" class="circle"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://denverdevs.org/">@Theresa O'Hare</a></td>
+                <td><a href="https://www.linkedin.com/in/theresa-o-hare-013ab8171/">Theresa O'Hare</a></td>
+                <td><a href="https://github.com/theresaoh">theresaoh</a></td>
+                <td><a href="mailto:theresa.ohare@outlook.com">theresa.ohare@outlook.com</a></td>
+
+            </tr>
+        </table>
+        </main>
         <footer>
+                &copy; Theresa O'Hare 2019
         </footer>
     </body>
 </html>
